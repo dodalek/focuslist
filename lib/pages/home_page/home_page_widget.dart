@@ -160,7 +160,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             ..complete(
                                                 TarefasListTable().queryRows(
                                               queryFn: (q) => q
-                                                  .eq(
+                                                  .eqOrNull(
                                                     'data',
                                                     supaSerialize<DateTime>(_model
                                                         .calendarioSelectedDay
@@ -236,7 +236,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 .status!,
                                                       },
                                                       matchingRows: (rows) =>
-                                                          rows.eq(
+                                                          rows.eqOrNull(
                                                         'id',
                                                         listViewTarefasListRow
                                                             .id,
@@ -310,7 +310,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     await TarefasListTable()
                                                         .delete(
                                                       matchingRows: (rows) =>
-                                                          rows.eq(
+                                                          rows.eqOrNull(
                                                         'id',
                                                         listViewTarefasListRow
                                                             .id,

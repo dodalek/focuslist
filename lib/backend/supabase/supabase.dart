@@ -2,8 +2,8 @@ import 'package:supabase_flutter/supabase_flutter.dart' hide Provider;
 
 export 'database/database.dart';
 
-const _kSupabaseUrl = 'https://gpmessawisdnfsvshhuk.supabase.co';
-const _kSupabaseAnonKey =
+String _kSupabaseUrl = 'https://gpmessawisdnfsvshhuk.supabase.co';
+String _kSupabaseAnonKey =
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdwbWVzc2F3aXNkbmZzdnNoaHVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjUyMjc3MjUsImV4cCI6MjA0MDgwMzcyNX0.q_TMdih8CGxbeyAgOfYAZW-mQcBW0xOZBWVXjCAeO6U';
 
 class SupaFlow {
